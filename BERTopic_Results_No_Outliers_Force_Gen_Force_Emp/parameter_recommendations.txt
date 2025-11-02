@@ -1,0 +1,23 @@
+================================================================================
+PARAMETER TUNING RECOMMENDATIONS
+================================================================================
+
+Current Configuration:
+  - MIN_TOPIC_SIZE: 23
+  - UMAP_N_NEIGHBORS: 10
+  - UMAP_N_COMPONENTS: 3
+  - UMAP_MIN_DIST: 0.1
+
+Results:
+  - Topics discovered: 21
+  - Outlier ratio: 1.5%
+  - Avg topic coherence: 98.1%
+  - Avg topic diversity: 44.3%
+
+Recommendations:
+✓ Excellent outlier ratio (1.5%)
+✓ Some topic imbalance (9.4:1) - expected with real data
+
+================================================================================
+To modify parameters, edit the CONFIGURATION SECTION at the top of the script.
+================================================================================

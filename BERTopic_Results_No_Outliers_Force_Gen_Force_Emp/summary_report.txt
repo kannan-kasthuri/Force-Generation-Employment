@@ -1,0 +1,109 @@
+
+================================================================================
+BERTOPIC ANALYSIS SUMMARY REPORT
+================================================================================
+Processing Date: 2025-10-21 12:16:46
+Output Folder: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508
+
+DATASET STATISTICS:
+- Total documents processed: 2340
+- Failed documents: 0
+- Average document length: 141.1 words
+- Min document length: 21 words
+- Max document length: 669 words
+
+REPRODUCIBILITY SETTINGS:
+- Random seed: 42
+- NumPy seed: 42
+- PyTorch seed: 42
+- CUDA deterministic: True
+
+TOPIC MODELING CONFIGURATION:
+- Algorithm: HDBSCAN (adaptive clustering)
+- Min topic size: 23 documents
+- UMAP neighbors: 10
+- UMAP components: 3
+- Representation: MaximalMarginalRelevance (diversity=0.3)
+
+TOPIC MODELING RESULTS:
+- Number of topics discovered: 21
+- Documents in outlier topic (-1): 34 (1.5%)
+- Average documents per topic: 109.8
+- Topic size range: 38-357 documents
+
+TOPIC BREAKDOWN:
+  Topic 0 (Topic_0: command, army, commander): 357 docs (15.3%) - command, army, commander, leadership, doctrine
+  Topic 1 (Topic_1: uas, aircraft, aviation): 333 docs (14.2%) - uas, aircraft, aviation, unman, drone
+  Topic 2 (Topic_2: operation, headquarter, commander): 190 docs (8.1%) - operation, headquarter, commander, support, function
+  Topic 3 (Topic_3: guard, reserve, army): 109 docs (4.7%) - guard, reserve, army, component, militia
+  Topic 4 (Topic_4: raf, alignment, division): 105 docs (4.5%) - raf, alignment, division, operation, support
+  Topic 5 (Topic_5: logistics, logistician, management): 89 docs (3.8%) - logistics, logistician, management, dod, dla
+  Topic 6 (Topic_6: readiness, unit, train): 105 docs (4.5%) - readiness, unit, train, army, rc
+  Topic 7 (Topic_7: domain, mdo, operation): 108 docs (4.6%) - domain, mdo, operation, enemy, concept
+  Topic 8 (Topic_8: manufacture, print, technology): 67 docs (2.9%) - manufacture, print, technology, produce, supply
+  Topic 9 (Topic_9: mobilization, mfgi, unit): 64 docs (2.7%) - mobilization, mfgi, unit, mobilize, mfgis
+  Topic 10 (Topic_10: army, arng, reserve): 131 docs (5.6%) - army, arng, reserve, readiness, ac
+  Topic 11 (Topic_11: force, domain, warfare): 72 docs (3.1%) - force, domain, warfare, army, operation
+  Topic 12 (Topic_12: replacement, leader, army): 65 docs (2.8%) - replacement, leader, army, commander, plan
+  Topic 13 (Topic_13: brigade, bcts, battalion): 105 docs (4.5%) - brigade, bcts, battalion, army, readiness
+  Topic 14 (Topic_14: reserve, army, operational): 83 docs (3.5%) - reserve, army, operational, unit, train
+  Topic 15 (Topic_15: capability, army, artillery): 38 docs (1.6%) - capability, army, artillery, integrate, command
+  Topic 16 (Topic_16: train, unit, readiness): 48 docs (2.1%) - train, unit, readiness, requirement, army
+  Topic 17 (Topic_17: sfa, advisor, operation): 42 docs (1.8%) - sfa, advisor, operation, brigade, army
+  Topic 18 (Topic_18: reserve, support, army): 54 docs (2.3%) - reserve, support, army, mobilization, unit
+  Topic 19 (Topic_19: sustainment, combat, requirement): 69 docs (2.9%) - sustainment, combat, requirement, reduce, military
+  Topic 20 (Topic_20: equipment, maintenance, support): 72 docs (3.1%) - equipment, maintenance, support, modernization, sustainment
+
+PROCESSING PERFORMANCE:
+- Embedding generation time: 11.41 seconds
+- Topic modeling time: 26.38 seconds
+- Total processing time: 37.79 seconds
+- Processing speed: 61.93 docs/sec
+
+HARDWARE USED:
+- Device: CUDA
+- Model: NVIDIA RTX 3500 Ada Generation Laptop GPU
+
+TOPIC COHERENCE SUMMARY:
+Average topic coherence: 98.1%
+Min coherence: 80.0%
+Max coherence: 100.0%
+
+OUTPUT FILES GENERATED:
+1. processing_log.txt - Detailed processing log with GPU monitoring
+2. failed_files.csv - List of files that failed to process
+3. document_embeddings.npy - Document embeddings array (reusable)
+4. topic_info.csv - Summary information for each topic
+5. topic_sizes.csv - Document counts and percentages per topic
+6. topic_words.csv - Keywords and scores for each topic
+7. topic_labels.csv - Descriptive labels for each topic
+8. document_topic_assignments.csv - Document-to-topic mappings
+9. representative_documents.csv - Top 5 representative docs per topic
+10. topic_coherence.csv - Topic coherence metrics
+11. hierarchical_topics.csv - Hierarchical topic relationships
+12. topic_similarity_matrix.csv - Topic-to-topic similarity scores
+13. topic_distance_map.html - Interactive topic visualization
+14. topic_hierarchy.html - Interactive hierarchical view
+15. topic_barchart.html - Topic sizes visualization
+16. topic_heatmap.html - Topic similarity heatmap
+17. bertopic_model/ - Saved model for future use
+18. summary_report.txt - This comprehensive summary
+
+COMPARISON WITH LDA:
+- LDA found: 28 topics (user reported)
+- BERTopic found: 21 topics
+- BERTopic advantages: 
+  * Semantic understanding via transformers
+  * Automatic outlier detection
+  * Hierarchical topic structure
+  * Better handling of short/varied documents
+- Note: BERTopic may find fewer but more coherent topics
+
+NEXT STEPS:
+1. Review interactive visualizations (HTML files)
+2. Check topic_labels.csv for topic descriptions
+3. Examine representative_documents.csv for topic examples
+4. If topics seem too broad, decrease MIN_TOPIC_SIZE
+5. If too many small topics, increase MIN_TOPIC_SIZE
+6. Model saved and can be reloaded for further analysis
+================================================================================

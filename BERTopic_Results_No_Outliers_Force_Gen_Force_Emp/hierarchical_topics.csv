@@ -1,0 +1,21 @@
+Parent_ID,Parent_Name,Topics,Child_Left_ID,Child_Left_Name,Child_Right_ID,Child_Right_Name,Distance
+40,army_operation_reserve_readiness_military,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]",38,army_train_reserve_readiness_component,39,command_army_operation_capability_commander,1.1945511462461
+39,command_army_operation_capability_commander,"[0, 1, 2, 4, 5, 7, 8, 11, 15, 17]",37,command_army_operation_capability_commander,35,logistics_supply_manufacture_print_technology,0.8920598750776423
+38,army_train_reserve_readiness_component,"[3, 6, 9, 10, 12, 13, 14, 16, 18, 19, 20]",36,reserve_army_readiness_mobilization_requirement,26,army_readiness_brigade_ctc_combat,0.7938430835044886
+37,command_army_operation_capability_commander,"[0, 1, 2, 4, 7, 11, 15, 17]",30,raf_army_regional_operation_support,34,command_army_operation_capability_commander,0.7437542857587883
+36,reserve_army_readiness_mobilization_requirement,"[3, 6, 9, 10, 14, 18, 19, 20]",27,equipment_maintenance_readiness_requirement_operation,33,reserve_army_readiness_mobilization_rc,0.6326070731630019
+35,logistics_supply_manufacture_print_technology,"[5, 8]",5,logistics_logistician_management_dod_dla,8,manufacture_print_technology_produce_supply,0.5978358857898997
+34,command_army_operation_capability_commander,"[0, 1, 2, 7, 11, 15]",32,operation_military_capability_commander_aircraft,28,operation_headquarter_commander_support_army,0.5911754213599764
+33,reserve_army_readiness_mobilization_rc,"[3, 6, 9, 10, 14, 18]",29,reserve_army_readiness_unit_operational,9,mobilization_mfgi_unit_mobilize_mfgis,0.5485634679172834
+32,operation_military_capability_commander_aircraft,"[0, 1, 7, 11]",0,command_army_commander_leadership_doctrine,31,uas_aircraft_capability_aviation_domain,0.5253127835682284
+31,uas_aircraft_capability_aviation_domain,"[1, 7, 11]",21,domain_force_operation_capability_mdo,1,uas_aircraft_aviation_unman_drone,0.4804754730793941
+30,raf_army_regional_operation_support,"[4, 17]",17,sfa_advisor_operation_brigade_army,4,raf_alignment_division_operation_support,0.4742342590017459
+29,reserve_army_readiness_unit_operational,"[3, 6, 10, 14, 18]",24,reserve_army_support_soldier_duty,25,reserve_readiness_army_unit_operational,0.4734906624811629
+28,operation_headquarter_commander_support_army,"[2, 15]",2,operation_headquarter_commander_support_function,15,capability_army_artillery_integrate_command,0.43601039920508633
+27,equipment_maintenance_readiness_requirement_operation,"[19, 20]",20,equipment_maintenance_support_modernization_sustainment,19,sustainment_combat_requirement_reduce_military,0.397990989289436
+26,army_readiness_brigade_ctc_combat,"[12, 13, 16]",22,unit_army_readiness_requirement_commander,13,brigade_bcts_battalion_army_readiness,0.38870593639307177
+25,reserve_readiness_army_unit_operational,"[6, 10, 14]",23,reserve_army_operational_unit_rc,6,readiness_unit_train_army_rc,0.37665736450406484
+24,reserve_army_support_soldier_duty,"[3, 18]",3,guard_reserve_army_component_militia,18,reserve_support_army_mobilization_unit,0.28725926631357057
+23,reserve_army_operational_unit_rc,"[10, 14]",14,reserve_army_operational_unit_train,10,army_arng_reserve_readiness_ac,0.28724185030438
+22,unit_army_readiness_requirement_commander,"[12, 16]",16,train_unit_readiness_requirement_army,12,replacement_leader_army_commander_plan,0.28634201278076965
+21,domain_force_operation_capability_mdo,"[7, 11]",7,domain_mdo_operation_enemy_concept,11,force_domain_warfare_army_operation,0.22347210594778621

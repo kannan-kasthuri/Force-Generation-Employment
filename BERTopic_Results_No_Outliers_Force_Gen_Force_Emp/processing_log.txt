@@ -1,0 +1,119 @@
+[2025-10-21 12:15:08] Using device: cuda
+[2025-10-21 12:15:08] GPU: NVIDIA RTX 3500 Ada Generation Laptop GPU
+[2025-10-21 12:15:08] Available GPU memory: 12.88 GB
+[2025-10-21 12:15:08] CONFIGURATION:
+[2025-10-21 12:15:08]   Random seed: 42
+[2025-10-21 12:15:08]   Target topics: Auto-detect
+[2025-10-21 12:15:08]   Min topic size: 23
+[2025-10-21 12:15:08]   Max topics: 60
+[2025-10-21 12:15:08]   UMAP neighbors: 10
+[2025-10-21 12:15:08]   UMAP components: 3
+[2025-10-21 12:15:08]   UMAP min distance: 0.1
+[2025-10-21 12:15:08]   HDBSCAN min cluster size: 23
+[2025-10-21 12:15:08]   HDBSCAN min_samples: 5
+[2025-10-21 12:15:08]   HDBSCAN metric: euclidean
+[2025-10-21 12:15:08]   HDBSCAN selection: eom
+[2025-10-21 12:15:08]   HDBSCAN prediction data: True
+[2025-10-21 12:15:08] Initial Setup
+  GPU Memory: 0.00GB allocated / 0.00GB reserved / 12.88GB total
+  GPU Utilization: 0.0%
+
+[2025-10-21 12:15:08] Loading documents from: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\extracted_warfighting_paragraphs_no_outliers
+[2025-10-21 12:15:08] Found 2340 text files to process
+[2025-10-21 12:15:49] Successfully loaded 2340 documents
+[2025-10-21 12:15:49] Failed to load 0 documents
+[2025-10-21 12:15:49] Documents Loaded
+  GPU Memory: 0.00GB allocated / 0.00GB reserved / 12.88GB total
+  GPU Utilization: 0.0%
+
+[2025-10-21 12:15:49] Initializing embedding model...
+[2025-10-21 12:15:51] Embedding model loaded on cuda
+[2025-10-21 12:15:51] Embedding Model Loaded
+  GPU Memory: 0.00GB allocated / 0.00GB reserved / 12.88GB total
+  GPU Utilization: 0.0%
+
+[2025-10-21 12:15:51] Generating embeddings for 2340 documents...
+[2025-10-21 12:16:02] Embeddings generated in 11.41 seconds (205.05 docs/sec)
+[2025-10-21 12:16:02] Embeddings Generated
+  GPU Memory: 0.45GB allocated / 1.48GB reserved / 12.88GB total
+  GPU Utilization: 3.5%
+
+[2025-10-21 12:16:02] Calculating document similarities...
+[2025-10-21 12:16:03] Average document similarity (cosine): 0.573
+[2025-10-21 12:16:03] Embeddings saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\document_embeddings.npy
+[2025-10-21 12:16:03] Initializing UMAP with optimized parameters...
+[2025-10-21 12:16:03] Using CPU UMAP (cuML not available)
+[2025-10-21 12:16:03] Using HDBSCAN with outlier-reduction settings...
+[2025-10-21 12:16:03] Before Topic Modeling
+  GPU Memory: 0.45GB allocated / 1.48GB reserved / 12.88GB total
+  GPU Utilization: 3.5%
+
+[2025-10-21 12:16:03] Initializing BERTopic model with optimized parameters...
+[2025-10-21 12:16:03] Fitting BERTopic model...
+[2025-10-21 12:16:29] Topic modeling completed in 26.38 seconds
+[2025-10-21 12:16:29] Discovered 21 topics from 2340 documents
+[2025-10-21 12:16:29] Outlier documents (topic -1): 614 (26.2%)
+[2025-10-21 12:16:29] WARNING: High outlier rate (26.2%). Attempting outlier assignment...
+[2025-10-21 12:16:29] Reassigning 614 outliers to nearest topics...
+[2025-10-21 12:16:32] Successfully reassigned 580 outliers
+[2025-10-21 12:16:32] Remaining outliers: 34 (1.5%)
+[2025-10-21 12:16:32] Topic Modeling Completed
+  GPU Memory: 0.45GB allocated / 1.48GB reserved / 12.88GB total
+  GPU Utilization: 3.5%
+
+[2025-10-21 12:16:32] No reduction needed - 21 topics within acceptable range
+[2025-10-21 12:16:32] Building hierarchical topic structure...
+[2025-10-21 12:16:33] Hierarchical topics saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\hierarchical_topics.csv
+[2025-10-21 12:16:33] Generating topic visualizations...
+[2025-10-21 12:16:33] Creating document scatter plot...
+[2025-10-21 12:16:43] Document scatter plot saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\document_scatter_plot.png
+[2025-10-21 12:16:43] 2D embeddings saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\embeddings_2d.npy
+[2025-10-21 12:16:45] Topic hierarchy saved
+[2025-10-21 12:16:45] Topic barchart saved (showing all 21 topics)
+[2025-10-21 12:16:45] Topic heatmap saved
+[2025-10-21 12:16:45] Generating topic information...
+[2025-10-21 12:16:45] Topic information saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\topic_info.csv
+[2025-10-21 12:16:45] Topic sizes saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\topic_sizes.csv
+[2025-10-21 12:16:45] Document-topic assignments saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\document_topic_assignments.csv
+[2025-10-21 12:16:45] Topic words saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\topic_words.csv
+[2025-10-21 12:16:45] Generating topic labels...
+[2025-10-21 12:16:45] Topic labels saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\topic_labels.csv
+[2025-10-21 12:16:45] Finding representative documents...
+[2025-10-21 12:16:45] Finding representative documents (top 5 per topic)...
+[2025-10-21 12:16:46] Representative documents saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\representative_documents.csv
+[2025-10-21 12:16:46] Topic coherence analysis saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\topic_coherence.csv
+[2025-10-21 12:16:46] Calculating topic-topic similarities...
+[2025-10-21 12:16:46] Topic similarity matrix saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\topic_similarity_matrix.csv
+[2025-10-21 12:16:46] Saving BERTopic model for future use...
+[2025-10-21 12:16:46] Model saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\bertopic_model
+[2025-10-21 12:16:46] Generating summary report...
+[2025-10-21 12:16:46] Summary report saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\summary_report.txt
+[2025-10-21 12:16:46] Calculating topic quality metrics...
+[2025-10-21 12:16:46] Topic diversity scores saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\topic_diversity.csv
+[2025-10-21 12:16:46] Average topic diversity: 44.3%
+[2025-10-21 12:16:46] Analyzing outlier documents...
+[2025-10-21 12:16:47] Outlier analysis saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\outlier_analysis.csv
+[2025-10-21 12:16:47] Outlier avg length: 109.8 words
+[2025-10-21 12:16:47] Outlier avg similarity to nearest topic: 0.655
+[2025-10-21 12:16:47] Analyzing document lengths by topic...
+[2025-10-21 12:16:47] Document length analysis saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\document_length_by_topic.csv
+[2025-10-21 12:16:47] Generating parameter recommendations...
+[2025-10-21 12:16:47] Parameter recommendations saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508\parameter_recommendations.txt
+[2025-10-21 12:16:47] Processing Complete - Final Status
+  GPU Memory: 0.45GB allocated / 1.48GB reserved / 12.88GB total
+  GPU Utilization: 3.5%
+
+[2025-10-21 12:16:47] GPU memory cleared
+[2025-10-21 12:16:47] All outputs saved to: C:\Users\KannanKasthuriDr\OneDrive - United States Army War College\Desktop\Data\USAWC_EDU\Research\SQRL\SRR\Results\BERTopic\BERTopic_Results_No_Outliers_Warfighting_20251021_121508
+[2025-10-21 12:16:47] Processing completed successfully!
+[2025-10-21 12:16:47] 
+================================================================================
+[2025-10-21 12:16:47] REPRODUCIBILITY NOTE:
+[2025-10-21 12:16:47] Random seed 42 was used for all stochastic components.
+[2025-10-21 12:16:47] Results should be identical across runs with the same:
+[2025-10-21 12:16:47]   - Input documents and order
+[2025-10-21 12:16:47]   - Python/library versions
+[2025-10-21 12:16:47]   - Hardware (GPU results may vary slightly from CPU)
+[2025-10-21 12:16:47]   - Note: Some GPU operations may have minor non-determinism
+[2025-10-21 12:16:47]            despite seeds due to parallel processing
+[2025-10-21 12:16:47] ================================================================================
